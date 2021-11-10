@@ -21,7 +21,7 @@
 		}
 	}
 	.bio-text-wrapper {
-		@apply grid grid-cols-1 lg:grid-cols-4;
+		@apply grid grid-cols-1 lg:grid-cols-4 gap-x-4;
 		.bio-text {
 			@apply col-span-1 lg:col-span-3 text-gray-400;
 			.subtitle {
