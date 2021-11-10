@@ -4,15 +4,16 @@ import BioCard from './components/BioCard';
 import AlbumCard from './components/AlbumCard';
 
 function App() {
-	const [data, setData] = useState();
+	const [profileData, setProfileData] = useState({});
+	const [albumData, setAlbumData] = useState([]);
 	useEffect(() => {
 		const url = "http://localhost:8000/";
 		const fetchData = async () => {
 			try {
 				const response = await fetch(url);
 				const json = await response.json();
-				console.log(data);
-				setData(json);
+				setProfileData(json);
+				setAlbumData(json.album)
 
 			}
 			catch (error) {
@@ -20,15 +21,16 @@ function App() {
 			}
 		}
 		fetchData()
-	},[data])
+	},[])
 
+	console.log(albumData);
 	return (
 	<main className="app">
 		<div className="container mx-auto px-4 lg:px-0 space-y-8">
-			<BioCard data={data}></BioCard>
+			<BioCard data={profileData}></BioCard>
 			<div className="album-card-grid">
-				{data.album.map((item) => {
-					return <AlbumCard data={item}></AlbumCard>
+				{albumData.map((item) => {
+					return <AlbumCard data={item} key={item.id}></AlbumCard>
 				})}
 			</div>
 		</div>
