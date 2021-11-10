@@ -1,3 +1,6 @@
 .app {
 	@apply min-h-screen flex flex-col bg-gradient-to-br from-[#D9E9E9] via-[#E9CBA9] to-[#8A7A63] py-8;
 }
+.album-card-grid {
+	@apply grid grid-cols-1 lg:grid-cols-3 gap-8;
+}
