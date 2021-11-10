@@ -1,10 +1,10 @@
 /* Card styles */
 .bio-card {
-	@apply px-12 py-8 rounded bg-white;
+	@apply px-4 py-6 lg:px-12 lg:py-8 rounded bg-white;
 }
 /* Card content */
 .bio-content {
-	@apply grid grid-cols-1 lg:grid-cols-12 gap-x-8;
+	@apply grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-4;
 
 	/* Profile image */
 	.bio-image-wrapper {
@@ -36,7 +36,7 @@
 			@apply font-bold text-gray-400;
 		}
 		.contact-info-data {
-			@apply text-purple-400;
+			@apply font-bold text-purple-400;
 		}
 	}
 }
