@@ -1,0 +1,42 @@
+/* Card styles */
+.bio-card {
+	@apply px-12 py-8 rounded bg-white;
+}
+/* Card content */
+.bio-content {
+	@apply grid grid-cols-1 lg:grid-cols-12 gap-x-8;
+
+	/* Profile image */
+	.bio-image-wrapper {
+		@apply col-span-1 lg:col-span-2 flex items-center;
+		img {
+			border-radius: 50%;
+		}
+	}
+	/* Profile text */
+	.bio-main {
+		@apply col-span-1 lg:col-span-10 space-y-4;
+		.profile-name {
+			@apply font-bold text-4xl;
+		}
+	}
+	.bio-text-wrapper {
+		@apply grid grid-cols-1 lg:grid-cols-4;
+		.bio-text {
+			@apply col-span-1 lg:col-span-3 text-gray-400;
+			.subtitle {
+				@apply font-bold;
+			}
+		}
+	}
+	/* Profile contact */
+	.bio-contact {
+		@apply col-span-1 lg:col-span-1;
+		.subtitle {
+			@apply font-bold text-gray-400;
+		}
+		.contact-info {
+			@apply text-purple-400;
+		}
+	}
+}
