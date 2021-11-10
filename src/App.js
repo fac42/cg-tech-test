@@ -8,7 +8,7 @@ function App() {
 		<div className="container mx-auto px-4 lg:px-0 space-y-8">
 			<BioCard></BioCard>
 			<div className="album-card-grid">
-				<AlbumCard></AlbumCard>
+				<AlbumCard isFeatured={true} ></AlbumCard>
 			</div>
 		</div>
 	</main>
