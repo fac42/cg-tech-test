@@ -32,10 +32,10 @@
 	/* Profile contact */
 	.bio-contact {
 		@apply col-span-1 lg:col-span-1;
-		.subtitle {
+		.contact-info-title {
 			@apply font-bold text-gray-400;
 		}
-		.contact-info {
+		.contact-info-data {
 			@apply text-purple-400;
 		}
 	}

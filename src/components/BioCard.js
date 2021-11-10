@@ -17,12 +17,12 @@ function BioCard() {
 						</div>
 						<div className="bio-contact">
 							<div>
-								<h2 className="subtitle">Phone</h2>
-								<p class="contact-info"></p>
+								<h2 className="contact-info-title">Phone</h2>
+								<p className="contact-info-data"></p>
 							</div>
 							<div>
-								<h2 className="subtitle">Email</h2>
-								<p></p>
+								<h2 className="contact-info-title">Email</h2>
+								<p className="contact-info-data"></p>
 							</div>
 						</div>
 					</div>
