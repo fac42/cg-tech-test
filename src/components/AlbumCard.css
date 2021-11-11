@@ -1,6 +1,8 @@
+/* Main card styles */
 .album-card {
 	@apply rounded-lg;
 }
+/* Upper half of card */
 .card-upper {
 	@apply relative;
 	.card-image {
@@ -17,6 +19,7 @@
 		left: 1rem;
 	}
 }
+/* Lower half of card */
 .card-lower {
 	@apply px-4 py-4 space-y-2 bg-white rounded-b-lg;
 	.card-metadata {
