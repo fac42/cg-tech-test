@@ -12,9 +12,10 @@ function App() {
 		const fetchData = async () => {
 			try {
 				const response = await fetch(url);
-				const data = await response.json();
-				setProfileData(data);
-				setAlbumData(data.album);
+				const {album: albumData, ...profileData} = await response.json();
+				setProfileData(profileData);
+				setAlbumData(albumData);
+				// console.log(albumData);
 			}
 			catch (error) {
 				console.log(error);
@@ -22,8 +23,6 @@ function App() {
 		}
 		fetchData()
 	},[])
-
-	console.log(albumData);
 	return (
 	<main className="app">
 		<div className="container mx-auto px-4 lg:px-0 space-y-8">
