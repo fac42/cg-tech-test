@@ -1,12 +1,11 @@
 import './BioCard.css';
-import profilePic from '../img/profile.jpeg';
 
 function BioCard(props) {
 	return (
 		<div className="bio-card">
 			<div className="bio-content">
 				<div className="bio-image-wrapper">
-					<img src={profilePic} alt="Profile"/>
+					<img src={`${process.env.PUBLIC_URL}/${props.data.profile_picture}`} alt="Profile"/>
 				</div>
 				<div className="bio-main">
 					<h1 className="profile-name">{props.data.name}</h1>
