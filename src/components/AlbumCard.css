@@ -1,6 +1,9 @@
 /* Main card styles */
 .album-card {
-	@apply rounded-lg;
+	transition: all 0.3s;
+	&:hover {
+		@apply shadow-lg;
+	}
 }
 /* Upper half of card */
 .card-upper {
@@ -11,6 +14,10 @@
 		height: auto;
 		object-fit: cover;
 		filter: brightness(0.7);
+		transition: all 0.7s;
+		&:hover {
+			filter: brightness(1);
+		}
 	}
 	.card-title {
 		@apply text-xl font-bold text-white;
