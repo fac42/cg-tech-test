@@ -1,12 +1,11 @@
 import './AlbumCard.css';
-import img1 from '../img/landscape1.jpeg';
 
 function AlbumCard(props) {
 	let featuredIconCssClass = props.data.featured ? 'visible' : 'invisible';
 	return(
 		<article className="album-card">
 			<div className="card-upper">
-				<img className="card-image" src={img1} alt="Landscape"/>
+				<img className="card-image" src={`${process.env.PUBLIC_URL}/${props.data.img}`} alt="Landscape"/>
 				<h2 className="card-title">
 					{props.data.title}
 				</h2>
