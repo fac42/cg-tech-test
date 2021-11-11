@@ -5,7 +5,7 @@
 	@apply relative;
 	.card-image {
 		@apply rounded-t-lg;
-		max-width: 100%;
+		width: 100%;
 		height: auto;
 		object-fit: cover;
 		filter: brightness(0.7);
